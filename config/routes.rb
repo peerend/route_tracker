@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :users
+  resources :user_routes
   get 'map_home/index'
 
   root 'map_home#index'

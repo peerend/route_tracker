@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Users</h1>
+
+<table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Route Name</th>
+      <th>End Lat</th>
+      <th>End Lon</th>
+      <th>Destination Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_routes.each do |user_route| %>
+      <tr>
+        <td><%= user_route.dest_name %></td>
+        <td><%= user_route.user_email %></td>
+        <td><%= user_route.route_end_lat %></td>
+        <td><%= user_route.route_end_lon %></td>
+        <td><%= link_to 'Show', user_route %></td>
+        <td><%= link_to 'Edit', edit_user_route_route_path(user_route) %></td>
+        <td><%= link_to 'Destroy', user_route, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
