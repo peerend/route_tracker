@@ -12,6 +12,17 @@
 
 ActiveRecord::Schema.define(version: 20180121231758) do
 
+  create_table "user_routes", force: :cascade do |t|
+    t.string "route_name"
+    t.float "route_end_lat"
+    t.float "route_end_lon"
+    t.string "dest_name"
+    t.string "dest_url"
+    t.string "dest_desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "user_name"
     t.string "user_email"

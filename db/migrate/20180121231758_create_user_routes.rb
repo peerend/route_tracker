@@ -1,5 +1,5 @@
 class CreateUserRoutes < ActiveRecord::Migration[5.1]
-  def create_table
+  def change
     create_table :user_routes do |t|
       t.string :route_name
       t.float :route_end_lat
