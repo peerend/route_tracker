@@ -1,3 +1,16 @@
 // Place all the styles related to the MapHome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+// taken from the big-picture https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/css/the-big-picture.css
+body {
+    background: rgb(216, 215, 215) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
