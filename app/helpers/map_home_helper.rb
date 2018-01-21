@@ -1,0 +1,2 @@
+module MapHomeHelper
+end
