@@ -1,5 +1,5 @@
 class UserRoutesController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user_route, only: [:show, :edit, :update, :destroy]
 
   def index
     @user_routes = UserRoute.all
