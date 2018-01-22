@@ -47,6 +47,23 @@ $(document).ready(function() {
           zoom: myCoords.zoom
         })
       }); 
+      getUserData();
+    }
+
+    function getUserData(){
+      $.ajax({
+        dataType: 'json',
+        url: '/users',
+        success: dataFound,
+        error: dataNotFound
+      })
+
+      function dataFound(data){
+        console.log(data);
+      }
+      function dataNotFound(error){
+        console.log(error.message);
+      }
     }
     createMap();
 });
