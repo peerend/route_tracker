@@ -12,3 +12,5 @@ The user can create a route by assigning their home coordinates and destination 
 Double click the map to set your destination
 
 the map defaults the home address to where you start
+
+Github: https://github.com/peerend/route_tracker/tree/simple_interface
