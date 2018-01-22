@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180121205040) do
+ActiveRecord::Schema.define(version: 20180122012625) do
+
+  create_table "user_routes", force: :cascade do |t|
+    t.string "route_name"
+    t.float "route_end_lat"
+    t.float "route_end_lon"
+    t.string "dest_name"
+    t.string "dest_url"
+    t.string "dest_desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "user_name"
@@ -19,6 +30,10 @@ ActiveRecord::Schema.define(version: 20180121205040) do
     t.float "home_lon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "dest_lat"
+    t.float "dest_lon"
+    t.string "dest_type"
+    t.string "dest_desc"
   end
 
 end

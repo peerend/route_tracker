@@ -11,13 +11,33 @@
 </p>
 
 <p>
-  <strong>Home lat:</strong>
+  <strong>Home latitude:</strong>
   <%= @user.home_lat %>
 </p>
 
 <p>
-  <strong>Home lon:</strong>
+  <strong>Home longitude:</strong>
   <%= @user.home_lon %>
+</p>
+
+<p>
+  <strong>Destination latitude:</strong>
+  <%= @user.dest_lat %>
+</p>
+
+<p>
+  <strong>Destination longitude:</strong>
+  <%= @user.dest_lon %>
+</p>
+
+<p>
+  <strong>Transporation Method:</strong>
+  <%= @user.dest_type %>
+</p>
+
+<p>
+  <strong>Destination Description:</strong>
+  <%= @user.dest_desc %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

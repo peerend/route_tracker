@@ -20,6 +20,10 @@
         <td><%= user.user_email %></td>
         <td><%= user.home_lat %></td>
         <td><%= user.home_lon %></td>
+        <td><%= user.dest_lat %></td>
+        <td><%= user.dest_lon %></td>
+        <td><%= user.dest_type %></td>
+        <td><%= user.dest_desc %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

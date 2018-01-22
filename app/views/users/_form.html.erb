@@ -31,6 +31,26 @@
     <%= form.text_field :home_lon, id: :user_home_lon %>
   </div>
 
+  <div class="field">
+    <%= form.label :dest_lat %>
+    <%= form.text_field :dest_lat, id: :user_dest_lat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dest_lon %>
+    <%= form.text_field :dest_lon, id: :user_dest_lon %>
+  </div>
+  
+  <div class="field">
+    <%= form.label :dest_type %>
+    <%= form.text_field :dest_type, id: :user_dest_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dest_desc %>
+    <%= form.text_field :dest_desc, id: :user_dest_desc %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
