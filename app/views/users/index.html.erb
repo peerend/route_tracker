@@ -1,37 +1,94 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>Users</h1>
+  <head>
 
-<table class="table">
-  <thead class="thead-inverse">
-    <tr>
-      <th>User name</th>
-      <th>User email</th>
-      <th>Home lat</th>
-      <th>Home lon</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Simple Map App</title>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.user_name %></td>
-        <td><%= user.user_email %></td>
-        <td><%= user.home_lat %></td>
-        <td><%= user.home_lon %></td>
-        <td><%= user.dest_lat %></td>
-        <td><%= user.dest_lon %></td>
-        <td><%= user.dest_type %></td>
-        <td><%= user.dest_desc %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <!-- Bootstrap core CSS -->
+    
+</head>
 
-<br>
+  <body>
 
-<%= link_to 'New User', new_user_path %>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="/users">User Detail List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <p id="notice"><%= notice %></p>
+    <h1>Users</h1>
+    
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>User name</th>
+          <th>User email</th>
+          <th>Home latitude</th>
+          <th>Home longitude</th>
+          <th>Destination Latitude</th>
+          <th>Destination Longitude</th>
+          <th>Destination Type</th>
+          <th>Destination Description</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.user_name %></td>
+            <td><%= user.user_email %></td>
+            <td><%= user.home_lat %></td>
+            <td><%= user.home_lon %></td>
+            <td><%= user.dest_lat %></td>
+            <td><%= user.dest_lon %></td>
+            <td><%= user.dest_type %></td>
+            <td><%= user.dest_desc %></td>
+            <td><%= link_to 'Show', user %></td>
+            <td><%= link_to 'Edit', edit_user_path(user) %></td>
+            <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    
+    <br>
+    <%= link_to 'New User', new_user_path %>
+    <br>
+    <div style="margin:20px">
+      <div id="my_map"></div>
+    </div>
+    </body>
+    <script>
+      // hack to get the page to reload, having trouble with js rendering
+      
+    </script>
+</head>

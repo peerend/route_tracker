@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require rails-ujs
-//= require turbolinks
+//= require map_home
 //= require bootstrap
 //= require_tree .

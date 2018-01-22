@@ -36,7 +36,7 @@ $(document).ready(function() {
   
     function drawMap(myCoords){
       var map = new ol.Map({
-        target: 'map',
+        target: 'my_map',
         layers: [
           new ol.layer.Tile({
             source: new ol.source.OSM()
@@ -48,8 +48,5 @@ $(document).ready(function() {
         })
       }); 
     }
-  
     createMap();
-  
-    //use google maps API to search for a bicycle store
-  });
+});
