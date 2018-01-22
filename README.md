@@ -2,6 +2,13 @@
 
 Create a route tracking app where users can input their home address as well as locations and view their routes via a map. 
 
-There should be 4 route types: walking, transit, driving, and biking.
-
 Simple postgres DB for backend
+
+The app uses the Openlayers javascript mapping library, Ruby on Rails for the backend, and PostgreSQL for the database. 
+
+The user can create a route by assigning their home coordinates and destination address
+(unfortunately the markers aren't showing yet)
+
+Double click the map to set your destination
+
+the map defaults the home address to where you start
