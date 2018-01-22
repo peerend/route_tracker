@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user_name %>
+    <%= form.label :user_name%>
     <%= form.text_field :user_name, id: :user_user_name %>
   </div>
 
@@ -22,12 +22,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :home_lat %>
+    <%= form.label :home_lat, :html => { :id => 'home_lat' }%>
     <%= form.text_field :home_lat, id: :user_home_lat %>
   </div>
 
   <div class="field">
-    <%= form.label :home_lon %>
+    <%= form.label :home_lon, :html => { :id => 'home_lon' } %>
     <%= form.text_field :home_lon, id: :user_home_lon %>
   </div>
 
