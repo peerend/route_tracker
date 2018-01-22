@@ -1,44 +1,93 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>
-  <strong>User name:</strong>
-  <%= @user.user_name %>
-</p>
+  <head>
 
-<p>
-  <strong>User email:</strong>
-  <%= @user.user_email %>
-</p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Simple Map App</title>
 
-<p>
-  <strong>Home latitude:</strong>
-  <%= @user.home_lat %>
-</p>
+    <!-- Bootstrap core CSS -->
+    
+</head>
 
-<p>
-  <strong>Home longitude:</strong>
-  <%= @user.home_lon %>
-</p>
+  <body>
 
-<p>
-  <strong>Destination latitude:</strong>
-  <%= @user.dest_lat %>
-</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="/users">User Detail List</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<p>
-  <strong>Destination longitude:</strong>
-  <%= @user.dest_lon %>
-</p>
+    <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Transporation Method:</strong>
-  <%= @user.dest_type %>
-</p>
+    <p>
+      <strong>User name:</strong>
+      <%= @user.user_name %>
+    </p>
 
-<p>
-  <strong>Destination Description:</strong>
-  <%= @user.dest_desc %>
-</p>
+    <p>
+      <strong>User email:</strong>
+      <%= @user.user_email %>
+    </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+    <p>
+      <strong>Home latitude:</strong>
+      <%= @user.home_lat %>
+    </p>
+
+    <p>
+      <strong>Home longitude:</strong>
+      <%= @user.home_lon %>
+    </p>
+
+    <p>
+      <strong>Destination latitude:</strong>
+      <%= @user.dest_lat %>
+    </p>
+
+    <p>
+      <strong>Destination longitude:</strong>
+      <%= @user.dest_lon %>
+    </p>
+
+    <p>
+      <strong>Transporation Method:</strong>
+      <%= @user.dest_type %>
+    </p>
+
+    <p>
+      <strong>Destination Description:</strong>
+      <%= @user.dest_desc %>
+    </p>
+
+    <%= link_to 'Edit', edit_user_path(@user) %> |
+    <%= link_to 'Back', users_path %>
+
+  </body>
+</head>
